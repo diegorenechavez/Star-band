@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title"> Star Band</h1>
+    <script src="index.js" defer></script>
+    <div class="group-1">
+        <div class="left">
+        <div class="drum-machine">
+            <div class="drum-top">
+                <div class="drum button" data-drum="kick-drum" id="kick"><h1 class="arrows">⬅</h1></div>
+                <audio src="/samples/kickdrum.mp3" id="kick-drum"></audio>
+                <div class="drum button" data-drum="snare-drum" id="snare"><h1 class="arrows">⬆</h1></div>
+                <audio src="/samples/DrumSnare.mp3" id="snare-drum"></audio>
+            </div>
+            <div class="drum-bottom">
+                <div class="drum button" data-drum="crash-drum" id="crash"><h1 class="arrows">⬇</h1></div>
+                <audio src="/samples/Clash.mp3" id="crash-drum"></audio>
+                <div class="drum button" data-drum="tom-drum" id="tom"><h1 class="arrows">➡</h1></div>
+                <audio src="/samples/Tom.mp3" id="tom-drum"></audio>
+            </div>
+        </div>
+        <div class="arp-container">
+            <div class="arp" id="C-arp" data-arp="c-arp"><h1 class="numpad">1</h1></div>
+            <audio src="/samples/CArp.mp3" id="c-arp" ></audio>
+            <div class="arp" id="G-arp" data-arp="g-arp" ><h1 class="numpad" >2</h1></div>
+            <audio src="/samples/Garp.mp3" id="g-arp"></audio>
+            <div class="arp" id="A-arp" data-arp="a-arp" ><h1 class="numpad" >3</h1></div>
+            <audio src="/samples/AArp.mp3" id="a-arp"></audio>
+            <div class="arp"><h1 class="numpad">4</h1></div>
+        </div>
+        </div>
+        <div class="piano-container">
+            <div class="guitar-body">
+                <div class="fret">
+                    <div class="c-chord" data-chord="c-chord">
+                        <h1 class="directions">C chord (hover)</h1>
+                        <div class="c chord"></div>
+                        <div class="c chord"></div>
+                        <div class="c chord"></div>
+                    </div>
+            
+                </div>
+            
+                <div class="fret">
+                    <div class="g-chord" data-chord="g-chord">
+                        <h1 class="directions">G chord (hover)</h1>
+                        <div class="g chord"></div>
+                        <div class="g chord"></div>
+                        <div class="g chord"></div>
+                    </div>
+            
+                </div>
+                <div class="fret">
+                    <div class="a-chord" data-chord="a-chord">
+                        <h1 class="directions">Am chord (hover)</h1>
+                        <div class="a chord"></div>
+                        <div class="a chord"></div>
+                        <div class="a chord"></div>
+                    </div>
+                
+                </div>
+                
+                
+                <div class="fret">
+                    <div class="f-chord" data-chord="f-chord">
+                        <h1 class="directions">F chord (hover)</h1>
+                        <div class="f chord"></div>
+                        <div class="f chord"></div>
+                        <div class="f chord"></div>
+                    </div>
+                
+                </div>
+            
+            </div>
+            <div class="piano">
+                <div data-note="C" class="key white">
+                    <h1 class="letter">Z</h1>
+                </div>
+                <div data-note="Db" class="key black">
+                    <h1 class="letter">S</h1>
+                </div>
+                <div data-note="D" class="key white white1">
+                    <h1 class="letter">X</h1>
+                </div>
+                <div data-note="Eb" class="key black">
+                    <h1 class="letter">D</h1>
+                </div>
+                <div data-note="E" class="key white white1">
+                    <h1 class="letter">C</h1>
+                </div>
+                <div data-note="F" class="key white white1">
+                    <h1 class="letter">V</h1>
+                </div>
+                <div data-note="Gb" class="key black">
+                    <h1 class="letter">G</h1>
+                </div>
+                <div data-note="G" class="key white white1">
+                    <h1 class="letter">B</h1>
+                </div>
+                <div data-note="Ab" class="key black">
+                    <h1 class="letter">H</h1>
+                </div>
+                <div data-note="A" class="key white white1">
+                    <h1 class="letter">N</h1>
+                </div>
+                <div data-note="Bb" class="key black">
+                    <h1 class="letter">J</h1>
+                </div>
+                <div data-note="B" class="key white white1">
+                    <h1 class="letter">M</h1>
+                </div>
+            </div>
+            </div>
+        
+        </div>
+            <div class="saber-holder">
+                <div class="light-saber-blue" data-synth="c-synth" id="Bsaber"><div class="holder">==</div></div>
+                <audio src="/samples/Csynth.mp3" id="c-synth"></audio>
+                <div class="light-saber-red"><div class="holder">==</div></div>
+                <div class="light-saber-green"><div class="holder">==</div></div>
+                <div class="light-saber-purple"><div class="holder">==</div></div>
+            </div>
+            <audio src="notes/C.mp3" id="C"></audio>
+            <audio src="notes/Db.mp3" id="Db"></audio>
+            <audio src="notes/D.mp3" id="D"></audio>
+            <audio src="notes/Eb.mp3" id="Eb"></audio>
+            <audio src="notes/E.mp3" id="E"></audio>
+            <audio src="notes/F.mp3" id="F"></audio>
+            <audio src="notes/Gb.mp3" id="Gb"></audio>
+            <audio src="notes/G.mp3" id="G"></audio>
+            <audio src="notes/Ab.mp3" id="Ab"></audio>
+            <audio src="notes/A.mp3" id="A"></audio>
+            <audio src="notes/Bb.mp3" id="Bb"></audio>
+            <audio src="notes/B.mp3" id="B"></audio>
+            <audio src="notes/Ebase.mp3" id="bassE"></audio>
+            <audio src="notes/baseA.mp3" id="bassA"></audio>
+            <audio src="notes/baseD.mp3" id="bassD"></audio>
+            <audio src="notes/baseG.mp3" id="bassG"></audio>
+            <audio src="notes/Cchord.mp3" id="c-chord"></audio>
+            <audio src="notes/Gchord.mp3" id="g-chord"></audio>
+            <audio src="notes/Aminor.mp3" id="a-chord"></audio>
+            <audio src="notes/Fchord.mp3" id="f-chord"></audio>
+    <div data-audio-src="notes/something.mp3" data-keyboard-key="z" data-active-until="aslongasitplays"></div>
+</body>
+</html>
